@@ -34,7 +34,8 @@ const Head = () => {
         dispatch(toggleMenu());
     };
     return (
-        <div className="grid grid-flow-col  p-3 shadow-lg bg-black ">
+        <div className="relative">
+        <div className="grid grid-flow-col  p-3 shadow-lg bg-black fixed w-full">
             <div className="flex col-span-1 items-center">
                 <img className="h-10  cursor-pointer align-middle"
                     onClick={() => toggleMenuhandler()}
@@ -66,6 +67,7 @@ const Head = () => {
                 <img className="h-9 align-middle"
                     src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="userIcon" />
             </div>
+        </div>
         </div>
     )
 };
