@@ -12,7 +12,7 @@ const Sidebar = () => {
     const ismenuOpen = useSelector((store) => store.app.ismenuOpen);
     if (!ismenuOpen) return null;
     return (
-        <div className=" w-56 bg-black shadow-md rounded md:w-56 lg:w-64 p-5 text-white">
+        <div className=" w-56 bg-black shadow-md rounded md:w-56 lg:w-64 p-5 text-white mt-16">
             <ul>
                 <li className="text-white cursor-pointer hover:bg-gray-600 p-2 hover:rounded-lg align-middle">
                     <Link to="/" ><FontAwesomeIcon icon={faHouse} className="mr-2 m-1  " />   Home</Link>
